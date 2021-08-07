@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 class Car{
 
     public: string carName;
@@ -23,7 +22,6 @@ class Car{
     public: void stopCar(){
         cout<<"\nCar stopped" ;
     }
-
 
     public: double Cost(int tax = 25, int amount=200000){
         double calTax = (tax * amount) / 100;
