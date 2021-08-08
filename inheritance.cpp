@@ -3,31 +3,44 @@ using namespace std;
 
 class Fruits{
     public:
-    string fruitName;
+    string fruitName = "coconut";
     int numberOfSeeds;
     string typeOfFruit;
 
 
-Fruits(string name, int seedcount, string type){
-    fruitName = name;
-    numberOfSeeds = seedcount;
-    typeOfFruit = type;
-}
-
+    // method
     public: 
     void ripen(){
 
         cout<< "\nThe fruit ripens";
     }
 
+// constructor
+// Fruits(string name, int seedcount, string type){
+    // fruitName = name;
+    // numberOfSeeds = seedcount;
+    // typeOfFruit = type;
+// }
+
 };
 
+// inheritance
+
+class Coconut: public Fruits{
+    public: int numberOfLayers = 3;
+};
+
+
+
+// main method
 int main(){
 
-    Fruits drupe("Coconut", 1, "Drupe");
+    // Fruits drupe("Coconut", 1, "Drupe");
 
-    cout<< "\nFruit Name: " + drupe.fruitName + "\nNumber of seeds:  "<<drupe.numberOfSeeds; 
+    // cout<< "\nFruit Name: " + drupe.fruitName + "\nNumber of seeds:  "<<drupe.numberOfSeeds; 
+    // drupe.ripen();
 
-    drupe.ripen();
+    Coconut coco();
+    cout<< coco.fruitName();
 
 }
