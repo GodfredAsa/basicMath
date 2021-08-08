@@ -16,16 +16,15 @@ class Fruits{
     }
 
 // constructor
-// Fruits(string name, int seedcount, string type){
-    // fruitName = name;
-    // numberOfSeeds = seedcount;
-    // typeOfFruit = type;
-// }
+Fruits(string name, int seedcount, string type){
+    fruitName = name;
+    numberOfSeeds = seedcount;
+    typeOfFruit = type;
+}
 
 };
 
 // inheritance
-
 class Coconut: public Fruits{
     public: int numberOfLayers = 3;
 };
@@ -34,13 +33,11 @@ class Coconut: public Fruits{
 
 // main method
 int main(){
+    Fruits drupe("Coconut", 1, "Drupe");
+    cout<< "\nFruit Name: " + drupe.fruitName + "\nNumber of seeds:  "<<drupe.numberOfSeeds; 
+    drupe.ripen();
 
-    // Fruits drupe("Coconut", 1, "Drupe");
-
-    // cout<< "\nFruit Name: " + drupe.fruitName + "\nNumber of seeds:  "<<drupe.numberOfSeeds; 
-    // drupe.ripen();
-
-    Coconut coco();
-    cout<< coco.fruitName();
+    // Coconut coco();
+    // cout<< coco.fruitName();
 
 }
