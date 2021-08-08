@@ -18,8 +18,6 @@ Fruits(string name, int seedcount, string type){
     void ripen(){
 
         cout<< "\nThe fruit ripens";
-        cout<<"\n";
-
     }
 
 };
