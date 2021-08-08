@@ -17,7 +17,7 @@ Fruits(string name, int seedcount, string type){
     public: 
     void ripen(){
 
-        cout<< "\nthis fruit rippens well and looks tasty";
+        cout<< "\nThe fruit ripens";
         cout<<"\n";
 
     }
